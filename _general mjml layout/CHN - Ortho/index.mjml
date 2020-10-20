@@ -1,0 +1,57 @@
+<mjml>
+  <mj-body background-color="#eeeeee">
+    <!-- Header -->
+    <mj-section background-color="#c4e8f3" background-url="header-bg.png">
+      <mj-column width="100%">
+        <mj-image src="community-health-network-logo.png" alt="Community Health Network logo" align="left" padding="20px" width="280px"></mj-image>
+      </mj-column>
+    </mj-section>
+    <!-- Color bar -->
+    <mj-section padding="0px">
+      <mj-column width="100%" padding="0px">
+        <mj-image src="/color-bar.png" padding="0px" width="600px"></mj-image>
+      </mj-column>
+    </mj-section>
+    <!-- Hero Image -->
+    <mj-section background-color="#ffffff" padding-bottom="0px" padding-top="0">
+      <mj-column width="100%">
+        <mj-image>
+        </mj-image>
+      </mj-column>
+    </mj-section>
+    <!-- Body Copy -->
+    <mj-section background-color="#ffffff" padding-bottom="0px" padding-top="0">
+      <mj-column width="100%">
+        <mj-text color="#435563" font-family="Georgia,'Times New Roman', Times, serif" font-size="24px" font-weight="600" padding-bottom="25px">Get back to the quality of life <span style="color:#e87824">you deserve.</span></mj-text>
+        <mj-text color="#435563" font-family="Arial, Helvetica, Ubuntu, sans-serif" font-size="14px" line-height="1.4" padding-bottom="15px">When joint pain becomes an everyday struggle, Community’s Center for Joint Health can help. Together we can get you back to the life you want to live — whether it’s time to explore joint replacement or joint preservation to keep the pain from getting worse.</mj-text>
+        <mj-text color="#435563" font-family="Arial, Helvetica, Ubuntu, sans-serif" font-size="14px" line-height="1.4" padding-bottom="25px">Our experienced team of orthopedic specialists work with you to determine the best path forward. Schedule an appointment and start setting your own pace.</mj-text>
+      </mj-column>
+    </mj-section>
+    <!-- CTA -->
+    <mj-section background-color="#c4e8f3" padding-bottom="20px" padding-top="10px">
+      <mj-column>
+        <mj-text color="#435563" font-family="Arial, Helvetica, Ubuntu, sans-serif" font-size="14px" font-weight="600" align="center" text-transform="uppercase">Click here to learn more or to schedule an appointment today.</mj-text>
+        <mj-image src="icon.png" width="100px" alt="Computer and arrow icon"></mj-image>
+        <mj-text color="#435563" font-family="Arial, Helvetica, Ubuntu, sans-serif" font-size="14px" font-weight="600" align="center">eCommunity.com/joint</mj-text>
+      </mj-column>
+    </mj-section>
+    <!-- Whitespace -->
+    <mj-section background-color="#ffffff">
+      <mj-column>
+        <mj-image></mj-image>
+      </mj-column>
+    </mj-section>
+    <!-- Color bar -->
+    <mj-section padding="0px">
+      <mj-column width="100%" padding="0px">
+        <mj-image src="/color-bar.png" padding="0px" width="600px"></mj-image>
+      </mj-column>
+    </mj-section>
+    <!-- Footer -->
+    <mj-section background-color="#435563" padding-bottom="20px" padding-top="0">
+      <mj-column>
+      </mj-column>
+    </mj-section>
+    <mj-section padding-bottom="20px" padding-top="0px"></mj-section>
+  </mj-body>
+</mjml>
