@@ -1,15 +1,15 @@
 <mjml>
   <mj-body background-color="#eeeeee">
     <!-- Header -->
-    <mj-section background-color="#c4e8f3" background-url="header-bg.png">
+    <mj-section background-color="#c4e8f3" background-url="https://raw.githubusercontent.com/DigitalMK/CHNwOrthoEmails/master/_general%20html%20layout/header-bg.png">
       <mj-column width="100%">
-        <mj-image src="community-health-network-logo.png" alt="Community Health Network logo" align="left" padding="20px" width="280px"></mj-image>
+        <mj-image src="https://raw.githubusercontent.com/DigitalMK/CHNwOrthoEmails/master/_general%20html%20layout/community-health-network-logo.png" alt="Community Health Network logo" align="left" padding="20px" width="280px"></mj-image>
       </mj-column>
     </mj-section>
     <!-- Color bar -->
     <mj-section padding="0px">
       <mj-column width="100%" padding="0px">
-        <mj-image src="/color-bar.png" padding="0px" width="600px"></mj-image>
+        <mj-image src="https://raw.githubusercontent.com/DigitalMK/CHNwOrthoEmails/master/_general%20html%20layout/color-bar.png" padding="0px" width="600px"></mj-image>
       </mj-column>
     </mj-section>
     <!-- Hero Image -->
@@ -31,20 +31,18 @@
     <mj-section background-color="#c4e8f3" padding-bottom="20px" padding-top="10px">
       <mj-column>
         <mj-text color="#435563" font-family="Arial, Helvetica, Ubuntu, sans-serif" font-size="14px" font-weight="600" align="center" text-transform="uppercase">Click here to learn more or to schedule an appointment today.</mj-text>
-        <mj-image src="icon.png" width="100px" alt="Computer and arrow icon"></mj-image>
+        <mj-image src="https://raw.githubusercontent.com/DigitalMK/CHNwOrthoEmails/master/_general%20html%20layout/icon.png" width="100px" alt="Computer and arrow icon"></mj-image>
         <mj-text color="#435563" font-family="Arial, Helvetica, Ubuntu, sans-serif" font-size="14px" font-weight="600" align="center">eCommunity.com/joint</mj-text>
       </mj-column>
     </mj-section>
     <!-- Whitespace -->
-    <mj-section background-color="#ffffff">
-      <mj-column>
-        <mj-image></mj-image>
-      </mj-column>
+    <mj-section background-color="#ffffff" padding="8px 0">
+      <mj-column></mj-column>
     </mj-section>
     <!-- Color bar -->
     <mj-section padding="0px">
       <mj-column width="100%" padding="0px">
-        <mj-image src="/color-bar.png" padding="0px" width="600px"></mj-image>
+        <mj-image src="https://raw.githubusercontent.com/DigitalMK/CHNwOrthoEmails/master/_general%20html%20layout/color-bar.png" padding="0px" width="600px"></mj-image>
       </mj-column>
     </mj-section>
     <!-- Footer -->
