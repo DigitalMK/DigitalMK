@@ -44,7 +44,12 @@
     </mj-section>
     <!-- Whitespace -->
     <mj-section background-color="#ffffff" padding="8px 0">
-      <mj-column>&nbsp;</mj-column>
+      <mj-column>
+        <mj-text color="#aaaaaa" font-family="Arial, Helvetica, Ubuntu, sans-serif" font-size="12px" line-height="1.4" font-weight="400" align="left" padding-top="15px" padding-bottom="15px">
+          Community Health Network complies with applicable Federal civil rights laws and does not discriminate on the basis of race, color, national origin, age, disability, or sex. ATENCIÓN: si habla español, tiene a su disposición servicios gratuitos de asistencia lingüística.<br> 
+注意：如果您使用繁體中文，您可以免費獲得語言援助服 務
+        </mj-text>
+      </mj-column>
     </mj-section>
     <!-- Color bar -->
     <mj-section padding="0px">
@@ -55,8 +60,11 @@
     <!-- Footer -->
     <mj-section background-color="#435563" padding-bottom="20px" padding-top="0">
       <mj-column>
-        <mj-text color="#ffffff" font-family="Arial, Helvetica, Ubuntu, sans-serif" font-size="13px" line-height="1.4" padding-top="20px" padding-bottom="0px">Footer text sample.</mj-text>
-        <mj-text color="#ffffff" font-family="Arial, Helvetica, Ubuntu, sans-serif" font-size="13px" line-height="1.4" padding-bottom="0px"><a href="#" style="color:#ffffff;text-decoration:underline;">Footer link sample.</a> (link styled)</mj-text>
+        <mj-text color="#aaaaaa" font-family="Arial, Helvetica, Ubuntu, sans-serif" font-size="13px" line-height="1.4" padding-top="20px" padding-bottom="0px">&copy; 2020 Community Health Network<br>
+Community Health Network<br>
+7250 Clearvista Drive, Indianapolis, IN 46256<br>
+</mj-text>
+        <mj-text color="#aaaaaa" font-family="Arial, Helvetica, Ubuntu, sans-serif" font-size="13px" line-height="1.4" padding-bottom="0px"><a href="#" style="color:#aaaaaa;text-decoration:underline;">Unsubscribe</a></mj-text>
       </mj-column>
     </mj-section>
     <mj-section padding-bottom="20px" padding-top="0px">
