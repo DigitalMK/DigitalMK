@@ -1,7 +1,16 @@
 <mjml>
+  <mj-head>
+    <mj-title>Joint pain should never set your pace.</mj-title>
+    <mj-preview>Joint pain should never set your pace.</mj-preview>
+  </mj-head>
   <mj-body background-color="#eeeeee">
+    <mj-section padding-bottom="0px" padding-top="5px">
+      <mj-column>
+        <mj-text color="#435563" font-family="Arial, Helvetica, Ubuntu, sans-serif" font-size="13px" line-height="1.4" padding-bottom="15px" align="center"><a href="#" style="color:#435563; text-decoration:none;">View email in browser message (link styled)</a></mj-text>
+      </mj-column>
+    </mj-section>
     <!-- Header -->
-    <mj-section background-color="#c4e8f3" background-url="https://raw.githubusercontent.com/DigitalMK/CHNwOrthoEmails/master/_general%20html%20layout/header-bg.png">
+    <mj-section background-color="#c4e8f3" background-url="https://raw.githubusercontent.com/DigitalMK/CHNwOrthoEmails/master/_general%20html%20layout/cta-background.jpg">
       <mj-column width="100%">
         <mj-image src="https://raw.githubusercontent.com/DigitalMK/CHNwOrthoEmails/master/_general%20html%20layout/community-health-network-logo.png" alt="Community Health Network logo" align="left" padding="20px" width="280px"></mj-image>
       </mj-column>
@@ -14,7 +23,7 @@
     </mj-section>
     <!-- Hero Image -->
     <mj-section background-color="#ffffff" padding="0">
-      <mj-column width="100%"><mj-image src="https://raw.githubusercontent.com/DigitalMK/CHNwOrthoEmails/master/_general%20html%20layout/hero-1.png" width="600px" padding="0"></mj-image>
+      <mj-column width="100%"><mj-image src="https://raw.githubusercontent.com/DigitalMK/CHNwOrthoEmails/master/_general%20html%20layout/hero-1.jpg" width="600px" padding="0"></mj-image>
       </mj-column>
     </mj-section>
     <!-- Body Copy -->
@@ -26,7 +35,7 @@
       </mj-column>
     </mj-section>
     <!-- CTA -->
-    <mj-section background-color="#c4e8f3" background-url="https://raw.githubusercontent.com/DigitalMK/CHNwOrthoEmails/master/_general%20html%20layout/cta-background.png" padding-bottom="20px" padding-top="10px">
+    <mj-section background-color="#c4e8f3" background-url="https://raw.githubusercontent.com/DigitalMK/CHNwOrthoEmails/master/_general%20html%20layout/cta-background.jpg" padding-bottom="20px" padding-top="10px">
       <mj-column>
         <mj-text color="#435563" font-family="Arial, Helvetica, Ubuntu, sans-serif" font-size="14px" font-weight="600" align="center" text-transform="uppercase">Click here to learn more or to schedule an appointment today.</mj-text>
         <mj-image src="https://raw.githubusercontent.com/DigitalMK/CHNwOrthoEmails/master/_general%20html%20layout/icon.png" width="100px" alt="Computer and arrow icon"></mj-image>
@@ -35,7 +44,7 @@
     </mj-section>
     <!-- Whitespace -->
     <mj-section background-color="#ffffff" padding="8px 0">
-      <mj-column></mj-column>
+      <mj-column>&nbsp;</mj-column>
     </mj-section>
     <!-- Color bar -->
     <mj-section padding="0px">
@@ -46,8 +55,12 @@
     <!-- Footer -->
     <mj-section background-color="#435563" padding-bottom="20px" padding-top="0">
       <mj-column>
+        <mj-text color="#ffffff" font-family="Arial, Helvetica, Ubuntu, sans-serif" font-size="13px" line-height="1.4" padding-top="20px" padding-bottom="0px">Footer text sample.</mj-text>
+        <mj-text color="#ffffff" font-family="Arial, Helvetica, Ubuntu, sans-serif" font-size="13px" line-height="1.4" padding-bottom="0px"><a href="#" style="color:#ffffff;text-decoration:underline;">Footer link sample.</a></mj-text>
       </mj-column>
     </mj-section>
-    <mj-section padding-bottom="20px" padding-top="0px"></mj-section>
+    <mj-section padding-bottom="20px" padding-top="0px">
+      <mj-column>&nbsp;</mj-column>
+    </mj-section>
   </mj-body>
 </mjml>
