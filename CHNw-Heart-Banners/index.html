@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CHNw - Heart Display Banners</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+  <style>
+    html { font-size: 10px;}
+    body {
+      margin: 0;
+      padding: 0;
+      background: #fff;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 300;
+    }
+    header{
+      height: 100%;
+      width: 11%;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: #1b262c;
+      overflow-x: hidden;
+      padding-top: 0px;
+    }
+    .logo{ padding: 15px 15px 15px 10px; }
+    ul{ list-style: none; padding: 0; margin: 0; }
+    li{ font-size: 1.4rem; }
+    li a{ color: #fff; text-decoration: none; display: block; padding: 15px 10px;  border-bottom: 1px solid #122; transition: all 1s ease; letter-spacing: 1px; }
+    .main li a:hover{ background-color: #2f4454; }
+    .main li a.active{ background-color: #0f4c75; }
+    .sub li a:hover{ background-color: #2f4454; }
+    .sub li a.active{ background-color: #3282b8; }
+    li .sub li{ font-size: 1.2rem; }
+    li .sub li a{ color: #fff; text-decoration: none; display: block; padding: 10px 25px !important;}
+    
+    #main{ margin-left: 12.5%; width: 87.5%; }
+    #main h1{ padding-left: 3px; margin-top: 15px; margin-bottom: 20px; color: #0f4c75; font-size: 1.6rem; letter-spacing: 5px; font-weight: 300; }
+    #main iframe{ height: 600px; width: 160px; }
+    
+    .sub{ display: none; }
+    .m1{ display: block; }
+    
+  </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    $(function() {
+      $( '.sub li a' ).click(function(e){
+        e.preventDefault();
+        bannerTitle = $(this).attr('data-title');
+        frameWidth = $(this).attr('data-size-width');
+        frameHeight = $(this).attr('data-size-height');
+        sourceURL = $(this).attr('data-url') + "index.html";
+        
+        $('#main h1').text( bannerTitle + ' - ' + frameWidth + 'x' + frameHeight );
+        
+        $('#main iframe').width(frameWidth).height(frameHeight);
+        $('#main iframe').attr("src", sourceURL);
+        
+        $('.sub li a').removeClass('active');
+        $(this).addClass('active');
+      });
+      
+      $('.main>li>a').click(function(e){
+        e.preventDefault();
+        $('.main>li>a').removeClass('active');
+        $(this).addClass('active');
+        
+        $('.sub').hide("slow");
+        $(this).siblings('.sub').show("slow");
+        
+        sourceURL = $(this).attr('data-group') + "/160x600/index.html";
+        $('#main iframe').width(160).height(600);
+        $('#main iframe').attr("src", sourceURL);
+        bannerTitle = $(this).attr('data-group-title')
+        $('#main h1').text( bannerTitle + ' 160x600' );
+        
+        $(this).siblings('ul').children('li').first().children('a').addClass('active');
+        
+      });
+      
+      
+    });
+  
+  </script>
+</head>
+<body>
+ <header>
+    <div class="nav">
+     <div class="logo">
+       <img src="chnw-logo.svg" alt="">
+     </div>
+      <ul class="main">
+        <li><a class="active" href="#" data-group="Mary-1" data-group-title="Mary #1">Mary #1</a>
+          <ul class="sub m1">
+            <li><a class="active" href="#" data-title="Mary #1" data-size-width="160" data-size-height="600" data-url="Mary-1/160x600/">160x600</a></li>
+            <li><a href="#" data-title="Mary #1" data-size-width="300" data-size-height="250" data-url="Mary-1/300x250/">300x250</a></li>
+            <li><a href="#" data-title="Mary #1" data-size-width="300" data-size-height="600" data-url="Mary-1/300x600/">300x600</a></li>
+            <li><a href="#" data-title="Mary #1" data-size-width="320" data-size-height="50" data-url="Mary-1/320x50/">320x50</a></li>
+            <li><a href="#" data-title="Mary #1" data-size-width="728" data-size-height="90" data-url="Mary-1/728x90/">728x90</a></li>
+            <li><a href="#" data-title="Mary #1" data-size-width="970" data-size-height="250" data-url="Mary-1/970x250/">970x250</a></li>
+            <li><a href="#" data-title="Mary #1" data-size-width="1200" data-size-height="628" data-url="Mary-1/1200x628/">1200x628</a></li>
+          </ul>
+        </li>
+        <li><a href="#" data-group="Mary-2" data-group-title="Mary #2">Mary #2</a>
+          <ul class="sub m2">
+            <li><a href="#" data-title="Mary #2" data-size-width="160" data-size-height="600" data-url="Mary-2/160x600/">160x600</a></li>
+            <li><a href="#" data-title="Mary #2" data-size-width="300" data-size-height="250" data-url="Mary-2/300x250/">300x250</a></li>
+            <li><a href="#" data-title="Mary #2" data-size-width="300" data-size-height="600" data-url="Mary-2/300x600/">300x600</a></li>
+            <li><a href="#" data-title="Mary #2" data-size-width="320" data-size-height="50" data-url="Mary-2/320x50/">320x50</a></li>
+            <li><a href="#" data-title="Mary #2" data-size-width="728" data-size-height="90" data-url="Mary-2/728x90/">728x90</a></li>
+            <li><a href="#" data-title="Mary #2" data-size-width="970" data-size-height="250" data-url="Mary-2/970x250/">970x250</a></li>
+            <li><a href="#" data-title="Mary #2" data-size-width="1200" data-size-height="628" data-url="Mary-2/1200x628/">1200x628</a></li>
+          </ul>
+        </li>
+        <li><a href="#" data-group="Mary-3" data-group-title="Mary #3">Mary #3</a>
+          <ul class="sub m3">
+            <li><a href="#" data-title="Mary #3" data-size-width="160" data-size-height="600" data-url="Mary-3/160x600/">160x600</a></li>
+            <li><a href="#" data-title="Mary #3" data-size-width="300" data-size-height="250" data-url="Mary-3/300x250/">300x250</a></li>
+            <li><a href="#" data-title="Mary #3" data-size-width="300" data-size-height="600" data-url="Mary-3/300x600/">300x600</a></li>
+            <li><a href="#" data-title="Mary #3" data-size-width="320" data-size-height="50" data-url="Mary-3/320x50/">320x50</a></li>
+            <li><a href="#" data-title="Mary #3" data-size-width="728" data-size-height="90" data-url="Mary-3/728x90/">728x90</a></li>
+            <li><a href="#" data-title="Mary #3" data-size-width="970" data-size-height="250" data-url="Mary-3/970x250/">970x250</a></li>
+            <li><a href="#" data-title="Mary #3" data-size-width="1200" data-size-height="628" data-url="Mary-3/1200x628/">1200x628</a></li>
+          </ul>
+        </li>
+        <li><a href="#" data-group="Ingrid-1" data-group-title="Ingrid #1">Ingrid #1</a>
+          <ul class="sub i1">
+            <li><a href="#" data-title="Ingrid #1" data-size-width="160" data-size-height="600" data-url="Ingrid-1/160x600/">160x600</a></li>
+            <li><a href="#" data-title="Ingrid #1" data-size-width="300" data-size-height="250" data-url="Ingrid-1/300x250/">300x250</a></li>
+            <li><a href="#" data-title="Ingrid #1" data-size-width="300" data-size-height="600" data-url="Ingrid-1/300x600/">300x600</a></li>
+            <li><a href="#" data-title="Ingrid #1" data-size-width="320" data-size-height="50" data-url="Ingrid-1/320x50/">320x50</a></li>
+            <li><a href="#" data-title="Ingrid #1" data-size-width="728" data-size-height="90" data-url="Ingrid-1/728x90/">728x90</a></li>
+            <li><a href="#" data-title="Ingrid #1" data-size-width="970" data-size-height="250" data-url="Ingrid-1/970x250/">970x250</a></li>
+            <li><a href="#" data-title="Ingrid #1" data-size-width="1200" data-size-height="628" data-url="Ingrid-1/1200x628/">1200x628</a></li>
+          </ul>
+        </li>
+        <li><a href="#" data-group="Ingrid-2" data-group-title="Ingrid #2">Ingrid #2</a>
+          <ul class="sub i2">
+            <li><a href="#" data-title="Ingrid #2" data-size-width="160" data-size-height="600" data-url="Ingrid-2/160x600/">160x600</a></li>
+            <li><a href="#" data-title="Ingrid #2" data-size-width="300" data-size-height="250" data-url="Ingrid-2/300x250/">300x250</a></li>
+            <li><a href="#" data-title="Ingrid #2" data-size-width="300" data-size-height="600" data-url="Ingrid-2/300x600/">300x600</a></li>
+            <li><a href="#" data-title="Ingrid #2" data-size-width="320" data-size-height="50" data-url="Ingrid-2/320x50/">320x50</a></li>
+            <li><a href="#" data-title="Ingrid #2" data-size-width="728" data-size-height="90" data-url="Ingrid-2/728x90/">728x90</a></li>
+            <li><a href="#" data-title="Ingrid #2" data-size-width="970" data-size-height="250" data-url="Ingrid-2/970x250/">970x250</a></li>
+            <li><a href="#" data-title="Ingrid #2" data-size-width="1200" data-size-height="628" data-url="Ingrid-2/1200x628/">1200x628</a></li>
+          </ul>
+        </li>
+        <li><a href="#" data-group="Ingrid-3" data-group-title="Ingrid #3">Ingrid #3</a>
+          <ul class="sub i3">
+            <li><a href="#" data-title="Ingrid #3" data-size-width="160" data-size-height="600" data-url="Ingrid-3/160x600/">160x600</a></li>
+            <li><a href="#" data-title="Ingrid #3" data-size-width="300" data-size-height="250" data-url="Ingrid-3/300x250/">300x250</a></li>
+            <li><a href="#" data-title="Ingrid #3" data-size-width="300" data-size-height="600" data-url="Ingrid-3/300x600/">300x600</a></li>
+            <li><a href="#" data-title="Ingrid #3" data-size-width="320" data-size-height="50" data-url="Ingrid-3/320x50/">320x50</a></li>
+            <li><a href="#" data-title="Ingrid #3" data-size-width="728" data-size-height="90" data-url="Ingrid-3/728x90/">728x90</a></li>
+            <li><a href="#" data-title="Ingrid #3" data-size-width="970" data-size-height="250" data-url="Ingrid-3/970x250/">970x250</a></li>
+            <li><a href="#" data-title="Ingrid #3" data-size-width="1200" data-size-height="628" data-url="Ingrid-3/1200x628/">1200x628</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <div id="main">
+    <h1>Mary #1 - 160x600</h1>
+    <iframe src="Mary-1/160x600/index.html" frameborder="0"></iframe>  
+  </div>
+  
+</body>
+</html>

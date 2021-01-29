@@ -1,0 +1,43 @@
+<!doctype html>
+
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="ad.size" content="width=970,height=250">
+	<title>970x250</title>
+	<script type="text/javascript"> var clickTag = "https://www.google.com/";</script>
+
+	<!--Consistency between browsers -->
+	<link rel="stylesheet" href="css/normalize.min.css" />
+
+	<!--Fonts-->
+
+	<!--CSS-->
+	<link rel="stylesheet" href="css/main.css">
+
+	<!--Load GSAP animation JavaScript libraries-->
+	<script src="https://s0.2mdn.net/ads/studio/cached_libs/tweenlite_1.18.0_56fa823cfbbef1c2f4d4346f0f0e6c3c_min.js"></script>
+	<script src="https://s0.2mdn.net/ads/studio/cached_libs/timelinelite_1.19.0_13e3bd0e510d63fd5e5ef9bf9dac7017_min.js"></script>
+	<script src="https://s0.2mdn.net/ads/studio/cached_libs/cssplugin_1.18.0_71489205621d46cbe88348eeb8fe493f_min.js"></script>
+	<script src="https://s0.2mdn.net/ads/studio/cached_libs/easepack_1.18.0_ed5816e732515f56d96a67f6a2a15ccb_min.js"></script>
+
+	<!--More JavaScript-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+	<a id="ad" href="javascript:void(window.open(clickTag))">
+		<div id="banner"> 
+			<!-- STATIC -->
+			<div id="loader"></div>
+			<img id="bg1" class="bg" src="images/bg1.jpg">
+			<img id="grad" src="images/grad.svg">
+			<img id="copy1" src="images/copy.svg">
+			<img id="bg2" class="bg" src="images/bg2.svg">
+		</div>
+	</a>
+
+	<!--Animation Scripts - must be at end for Greensock to work--> 
+	<script src="js/animation.js"></script>
+</body>
+</html>
